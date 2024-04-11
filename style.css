@@ -1,19 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home section styling */
 .container{
     position: relative;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url(image1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 28vh;
+   
 }
 
 body{
     font-size: 1.3rem;
     font-family: 'Work Sans', sans-serif;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #333;
+    
 }
 
 header{
@@ -56,10 +67,28 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    box-shadow: 0 0 0 0.625rem rgba(0, 0, 0, 0.1), inset 0 0 0 0.625rem rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 0 0.625rem rgba(0, 0, 0, 0.1), insert 0 0 0 0.625rem rgba(255, 255, 255, 0.6);
     background-color: rgba(107, 93, 84, 0.678);
     color: rgba(0, 35, 122, 0.7);
 
+}
+
+#welcome {
+	text-align: center;
+	font-size: xx-large;
+	padding: 2%;
+    background-image: url(image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#welcome h1 {
+	font-size: 150px;
+	font-family: Arial, Helvetica, sans-serif;
+    opacity:25%;
+    margin-top: 2%;
+    text-align: center;
+    color: #f05d18;
 }
 
 #slogan{
@@ -67,14 +96,36 @@ nav ul li a:hover{
     text-align: center;
     font-size: x-large;
 }
-
+/* Scholar life section styling */
 #scholar{
+    padding-left: 3%;
+    padding-right: 5%;
+    display: flex;
+    margin-top: 2%;
+}
 
+.ss{
+    border-radius: 22px;
+    height: 280px;
+    padding-top: 1%;
 }
 
 #scholar h3{
 text-align: center;
 color: #f05d18;
+font-size: 30px;
+text-transform: uppercase;
+margin-bottom: 1%;
+}
+
+#scholar p{
+font-size: 22px;
+margin: -.5%;
+}
+
+/* Activities section styling */
+#activities{
+    margin-top: 2%;
 }
 
 #activities h2{
@@ -88,34 +139,231 @@ text-align: center;
 color: #f05d18;
 }
 
-#writing{
+/* Music section style */
+#music{
+    padding-left: 3%;
+    padding-right: 5%;
+    display: flex;
+    margin-top: 2%; 
+}
 
+.sss{
+    border-radius: 22px;
+    height: 380px;
+    padding-top: 1%;
+}
+
+#music h3{
+text-align: center;
+font-size: 40px;
+}
+
+#music p{
+margin: -.4%;
+}
+
+span{
+    color: blue;
+}
+
+.ssss{
+    margin: -.95%;
+    height: 100px;
+    padding-left: 33%;
+}
+
+/* Writing section style */
+#writing{
+    padding-left: 3%;
+    padding-right: 5%;
+    display: flex;
+    margin-top: 2%; 
+}
+
+.book{
+    border-radius: 22px;
+    height: 380px;
+    padding-top: 1%;
 }
 
 #writing h3{
 text-align: center;
+font-size: 40px;
 color: #f05d18;
+}
+
+#writing p{
+margin: -.5%;
+}
+
+span{
+    color: blue;
+}
+
+.books{
+   height: 80px;
+   padding-left: 90%;
+
+}
+
+/* Dance Section Style */
+#dance{
+    padding-left: 3%;
+    display: flex;
+    margin-top: 2%; 
+}
+
+.sssss{
+    border-radius: 22px;
+    height: 430px;
+    padding-top: 1%;
 }
 
 #dance h3{
 text-align: center;
+font-size: 40px;
 color: #f05d18;
 }
 
-#classes{
 
+#dance p{
+margin: -.7%;
 }
 
+span{
+    color: blue;
+}
+
+/* Enrollment section styling */
 #classes h2{
     text-align: center;
     color: blue;
     text-transform: uppercase;
+    margin-top: 1.5%;
 }
 
+/* Future students styling */
 #classes h3{
     text-align: center;
     color: #f05d18;
 }
+
+.gridd{
+    margin-top: 1.2%;
+    display: flex;
+    padding-left: 2%;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    padding-bottom: 5%;
+    padding-top: 1%;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.griditem1{
+    background-color: blue;
+    border-radius: 11px;
+    padding-bottom: 1%;
+    box-shadow: 2px 2px black;
+}
+.griditem1:hover{
+    background-color: aquamarine;
+    color: #333;
+    cursor: pointer;
+}
+
+.griditem2{
+    background-color: orangered;
+    border-radius: 11px;
+    padding-bottom: 1%;
+    box-shadow: 2px 2px black;
+}
+.griditem2:hover{
+    background-color: aquamarine;
+    color: #333;
+    cursor: pointer;
+}
+
+.griditem3{
+    background-color: orange;
+    border-radius: 11px;
+    padding-bottom: 1%;
+    box-shadow: 2px 2px black;
+}
+.griditem3:hover{
+    background-color: aquamarine;
+    color: #333;
+    cursor: pointer;
+}
+
+.griditem4{
+    background-color: red;
+    border-radius: 11px;
+    padding-bottom: 1%;
+    box-shadow: 2px 2px black;
+}
+.griditem4:hover{
+    background-color: aquamarine;
+    color: #333;
+    cursor: pointer;
+}
+
+.griditem5{
+    background-color: green;
+    border-radius: 11px;
+    padding-bottom: 1%;
+    box-shadow: 2px 2px black;
+}
+.griditem5:hover{
+    background-color: aquamarine;
+    color: #333;
+    cursor: pointer;
+}
+
+.griditem6{
+    background-color: yellow;
+    border-radius: 11px;
+    padding-bottom: 1%;
+    box-shadow: 2px 2px black;
+}
+.griditem6:hover{
+    background-color: aquamarine;
+    color: #333;
+    cursor: pointer;
+}
+
+.griditem7{
+    background-color: indigo;
+    border-radius: 11px;
+    padding-bottom: 1%;
+    box-shadow: 2px 2px black;
+}
+.griditem7:hover{
+    background-color: aquamarine;
+    color: #333;
+    cursor: pointer;
+}
+
+.nme{
+    padding-left: 5%;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+.trt{
+    font-weight: 100;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.curr{
+
+}
+
+.curr ol{
+  list-style: circle;
+}
+
 
 /* CONTACTS SECTION STYLE */
 #contacts h1{
